@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ספר טלפונים</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body ng-app="phonebookApp" ng-controller="PhonebookController"  id="wrapLayout">
+
+    <div class="container">
+        <h1>ספר טלפונים</h1>
+        
+		<input type="text" placeholder="שם" ng-model="newContact.name" required>
+		<input type="text" placeholder="טלפון" ng-model="newContact.phone" required>
+		<button ng-click="AddNewContact()" >הוסף איש קשר</button>
+		
+		<table style="width:100%;" >
+			<tr ng-repeat="itm in contactsArray">
+				<td>{{itm.name}}</td>
+				<td>{{itm.phone}}</td>
+			</tr>
+		</table>
+		
+		
+		
+    </div>
+    
+</body>
+</html>

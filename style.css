@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+form input[type="text"] {
+    width: calc(50% - 20px);
+    margin: 5px;
+    padding: 10px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 8px 0;
+}
